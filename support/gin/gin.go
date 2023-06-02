@@ -3,7 +3,7 @@ package gin
 import (
 	"net/http"
 
-	"github.com/davidebianchi/gswagger/apirouter"
+	"github.com/vishvanava/gswagger/apirouter"
 
 	"github.com/gin-gonic/gin"
 )
