@@ -43,7 +43,7 @@ func (r ginRouter) TransformPathToOasPath(path string) string {
 }
 
 func NewRouter(router *gin.Engine) apirouter.Router[HandlerFunc, Route] {
-	return ginRouter{
+	return &ginRouter{
 		router: router,
 	}
 }
