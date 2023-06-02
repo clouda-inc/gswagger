@@ -1,4 +1,4 @@
-module github.com/davidebianchi/gswagger
+module github.com/vishvanava/gswagger
 
 go 1.19
 
