@@ -15,6 +15,7 @@ require (
 )
 
 require (
+	github.com/davidebianchi/gswagger v0.9.0
 	github.com/gin-gonic/gin v1.9.1
 	github.com/gofiber/fiber/v2 v2.46.0
 )
