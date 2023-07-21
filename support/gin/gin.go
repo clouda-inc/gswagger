@@ -2,9 +2,10 @@ package gin
 
 import (
 	"net/http"
+	"strings"
 
 	"github.com/davidebianchi/gswagger/apirouter"
-	
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -39,7 +40,15 @@ func (r ginRouter) SwaggerHandler(contentType string, blob []byte) HandlerFunc {
 }
 
 func (r ginRouter) TransformPathToOasPath(path string) string {
-	return path
+	segments := strings.Split(path, "/")
+
+	for i, segment := range segments {
+		if strings.HasPrefix(segment, ":") {
+			segments[i] = "{" + segment[1:] + "}"
+		}
+	}
+
+	return strings.Join(segments, "/")
 }
 
 func NewRouter(router *gin.Engine) apirouter.Router[HandlerFunc, Route] {
