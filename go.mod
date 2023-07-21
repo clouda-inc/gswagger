@@ -1,4 +1,4 @@
-module github.com/vishvanava/gswagger
+module github.com/DilankaPerera1/gswagger
 
 go 1.20
 
