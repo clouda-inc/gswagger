@@ -8,7 +8,7 @@ require (
 	github.com/ghodss/yaml v1.0.0
 	github.com/gin-gonic/gin v1.9.1
 	github.com/gofiber/fiber/v2 v2.46.0
-	github.com/gorilla/mux v1.8.0
+	github.com/gorilla/mux v1.8.1
 	github.com/labstack/echo/v4 v4.10.2
 	github.com/mia-platform/jsonschema v0.1.0
 	github.com/stretchr/testify v1.8.4
